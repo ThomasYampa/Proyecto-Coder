@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* barra de navegacion  inicio*/
+nav {
+    display: flex;
+    width: 100%;
+    height: 4em;
+    background-color: rgb( 0, 1, 23);
+}
+.icono {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+}
+.icono img {
+    width: 80%;
+    height: 100%;
+} 
+.navegacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.navegacion ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+.navegacion li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 1.5em;
+    
+}
+.navegacion a {
+    text-decoration: none;
+    font-family:'Inter', sans-serif;
+    color: white;
+    
+}
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+input {
+    border-radius: 100px;
+    height: 2.5em;
+}
+/* barra de navegacion  fin*/
+
+/* index inicio*/
+.carrusel img{
+    width: 100%;
+}
+.main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.main h1 {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10vw;
+    font-size: 2em
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+.noticia {
+    display: flex;  
+    width: 80%;
+    height: 100%;
+    border-style: solid;
+}
+.noticia--texto{
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+.noticia--img{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+.noticia--img img{
+    width: 100%;
+    height: 100%;
+}
+section {
+    display: inline-block;
+    width: 100%;
+
+}
+
+
+.noticia h2{ 
+    display: inline-block; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+.noticia p{  
+    font-family:'Inter', sans-serif;
+}   
+/* main-index fin*/
+
+/* footer inicio*/
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family:'Inter', sans-serif;
+}
+.box  {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+.aboutus {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutus h3 {
+    display: block;
+}
+.aboutus p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.redes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy p {
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+/* footer fin*/
+
+/* main-equipos inicio*/
+.head {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(170, 40, 40);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ranking--puesto {
+    background-color: rgb(241, 89, 89);
+    border: solid 1px white ;
+}
+.continentes {
+    background-color: rgb(217, 217, 217);
+    width: 20vw;
+}
+.continentes h2 {
+    border: solid 1px white ;
+}
+.continentes li{
+    text-decoration-style: solid;
+}
+.contenedor--torneos {
+    display: block;
+}
+.regiones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.publicidad {
+    width: 100%;
+    height: 15vh;
+    background-color: darkgray;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* main-equipos fin*/
+
+/* main-torneos inicio*/
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 50vh;
+    margin: 0.5em auto 0.5em auto;
+    border: solid 1px black ;
+}
+.pricipal--nombre {
+    display: flex;
+    background-image: url(../imagenes/torneos/esl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+.principal--informacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.principal--informacion p{
+    display: inline-block;
+}
+.torneo {
+    display: block;
+    width: 98%;
+    height: 15vh;
+    margin: 0.5em auto 0.5em auto;
+    border: solid 1px black ;
+}
+.torneo--nombre {
+    background-color: rgb(217, 217, 217);
+    height: 80%;
+}
+.torneo--informacion {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.torneo--informacion p {
+    display: inline-block;
+}
+
+/* main-torneos fin*/
+
+/* main-galeria inicio*/
+.galeria--eventos {
+    margin-bottom: 5vh;
+}
+.galeria--eventos h1{
+    height: 10vh;
+    background-color: rgb(120, 51, 225);
+}
+.galeria--contenedor--eventos {
+    display: block;
+}
+.galeria--contenedor--eventos h3 {
+    width: 20vw;
+    margin: auto;
+}
+.galeria--contenedor--eventos--img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.galeria--contenedor--eventos--img img{
+    display: inline-block;
+    width: 50%;
+    height: 33,3%;
+}
+.galeria--contenedor--equipos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.galeria--contenedor--equipos img {
+    width: 25%;
+    height: 16,65%;
+}
+.galeria--contenedor--jugadores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.galeria--contenedor--jugadores img {
+    width: 25%;
+    height: 16,65%;
+}
+/* main-galeria fin*/
+
+/* main-noticia inicio */
+.noticias--popular h1 {
+    height: 12vh;
+    background-color: rgb(120, 51, 225);
+}
+.noticias--popular--principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticias--popular--principal img {
+    height: 80%;
+    width: 70vw;
+    border: solid 1px black;
+}
+.noticias--popular--principal--texto {
+    height: 20%;
+    width: 70vw;
+    border: solid 1px black;
+}
+.noticias--csgo {
+    margin-top: 5vh;
+    margin-bottom:5vh ;
+}
+.noticias--contenedor {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 100%;
+    justify-content: space-around;
+}
+.noticias--csgo--nota {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    border: solid 1px black;
+}
+.noticias--csgo--nota img {
+    height: 80%;
+}
+
+/* main-noticia fin */
+
+/* main-soporte inicio */
+.soporte--titulo {
+    display: flex;
+    justify-content: center;
+}
+.soporte--contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.soporte--contenedor--input {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.soporte--contenedor--input input{
+    border-radius: 5px;
+}
+.soporte--contenedor--mensaje {
+    width: 100%;
+}
+.soporte--contenedor--mensaje label{
+    display: block;
+}
+.soporte--contenedor--mensaje textarea {
+    width: 100%;
+}
+.soporte--contenedor--botones {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+/* main-soporte fin */
