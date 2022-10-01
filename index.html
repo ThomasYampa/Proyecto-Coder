@@ -15,64 +15,136 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <title>Info Esports</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-color">
             <div class="container-fluid bg-color">
-                    <a class="navbar-brand" href="#"><img src="./imagenes/icon.png" alt="" class="icon-size"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img src="./imagenes/icon.png" alt="" class="icon-size"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/equipos.html">Equipos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/torneos.html">Torneos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/equipos.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg></button>
+                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="carrusel">
-            <img src="./imagenes/imagen-1.webp" alt="">
+        <div id="carousel-index" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./paginas/noticias.html" target="_blank"><img src="./imagenes/img-1.jpg"
+                            class="img-carousel" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./paginas/noticias.html" target="_blank"><img src="./imagenes/image-2.webp"
+                            class="img-carousel" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./paginas/torneos.html" target="_blank"><img src="./imagenes/image-3.png"
+                            class="img-carousel" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-index" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-index" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <section class="main">
-            <h1>Destacados</h1>
-            <article class="contenedor">
-                <div class="noticia">
-                    <div class="noticia--texto">
-                        <h2>9z team al major 2021</h2>
-                        <p>EL conjunto violeta logro ser la primera organizacion argentina en clasificarse al mundial de
-                            CS:GO
-                        </p>
-                    </div>
-                    <div class="noticia--img">
-                        <img src="./imagenes/9zteam.jpg" alt="9z team">
+        <section class="my-3">
+            <div class="conteiner-fluid">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h1 class="w-100 text-center">Destacados</h1>
+                    <div class="col-10 col-lg-7 text-center rounded-3 my-2 my-lg-0 new">
+                        <a href="./paginas/noticias.html">
+                            <img src="./imagenes/new-1.jpg" alt="" />
+                            <h3 class="mb-0 ">Rox fuera de 9z</h3>
+                        </a>
                     </div>
                 </div>
-            </article>
+                <div class="d-flex justify-content-center flex-wrap my-5">
+                    <h2 class="w-100 text-center">Otros</h2>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new ">
+                        <a href="./paginas/noticias.html">
+                            <img src="./imagenes/new-2.jpg" alt="" />
+                            <h3 class="mb-0 new-font">Precentacion de Buda</h3>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new">
+                        <a href="./paginas/torneos.html">
+                            <img src="./imagenes/new-3.avif" alt="" />
+                            <h3 class="mb-0 new-font">Arrancan los playoffs</h3>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new">
+                        <a href="./paginas/noticias.html">
+                            <img src="./imagenes/new-4.jpg" alt="" />
+                            <h3 class="mb-0 new-font">Afuera del RMR</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap my-5">
+                    <h2 class="w-100 text-center">Nos</h2>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new">
+                        <a href="./paginas/torneos.html"><img src="./imagenes/tournament.jpg" alt="" />
+                            <h3 class="mb-0 new-font">Todo acerca de torneos</h3>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new">
+                        <a href="./paginas/equipos.html">
+                            <img src="./imagenes/ranking.jpg" alt="" />
+                            <h3 class="mb-0 new-font">Ranking Mundial</h3>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-2 text-center rounded-3 mx-4 my-2 my-lg-0 new">
+                        <a href="./paginas/galeria.html">
+                            <img src="./imagenes/gallery.jpg" alt="" />
+                            <h3 class="mb-0 new-font">Las mejores fotografias</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -116,12 +188,13 @@
                                 </svg></a></h4>
                     </div>
                 </div>
-                    <div class="col-12 text-white text-center border-top border-white pe-0">
-                        <p class="m-0">Copyright 2022©</p>
-                    </div>
+                <div class="col-12 text-white text-center border-top border-white pe-0">
+                    <p class="m-0">Copyright 2022©</p>
+                </div>
             </div>
         </div>
     </footer>
     <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
