@@ -21,77 +21,91 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-color">
             <div class="container-fluid bg-color">
-                    <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon.png" alt="" class="icon-size"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon.png" alt=""
+                        class="icon-size icon-giro"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipos.html">Equipos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="torneos.html">Torneos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipos.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg></button>
+                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="soporte">
-            <div class="soporte--titulo">
-                <h1>Soporte</h1>
+        <div class="conteiner-flud">
+            <div class="row mx-0">
+                <div class="col-12 text-center my-lg-4">
+                    <h1 class="mb-0">Soporte</h1>
+                </div>
+                <form action="">
+                    <div class="row d-flex justify-content-center mx-0 my-lg-4">
+                        <div class="col-lg-5 col-10">
+                            <label for="nombre">Nombre:</label>
+                            <input for="nombre" class="input-style "></input>
+                        </div>
+                        <div class="col-lg-5 col-10">
+                            <label for="apellido">Apellido:</label>
+                            <input for="apellido" class="input-style"></input>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-0 my-lg-4">
+                        <div class="col-lg-5 col-10">
+                            <label for="correo" class="w-100">Correo electronico:</label>
+                            <input type="email" id="correo" name="correo" class="w-100">
+                        </div>
+                        <div class="col-lg-5 col-10 ">
+                            <label for="asunto" class="w-100">Asunto</label>
+                            <select name="asunto" id="asunto" class="w-100 ">
+                                <option value="1">Seleccione una opcion</option>
+                                <option value="2">Informacion erronea</option>
+                                <option value="3">Informacion erronea</option>
+                                <option value="1">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-0 p-0 my-lg-4">
+                        <div class="col-10 col-10">
+                            <label for="mensaje" class="w-100 ">Deje su mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="w-100"></textarea>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-0 p-0 my-4">
+                        <div class="col-5 col-lg-5 p-0 d-flex justify-content-end pe-1"><input class="btn btn-outline-dark" type="submit" value="Submit"></div>
+                        <div class="col-5 col-lg-5 p-0 ps-1"><input class="btn btn-outline-dark" type="reset" value="Reset"></div>
+                    </div>
+                </form>
             </div>
-            <form action="" class="soporte--contenedor">
-                <div class="soporte--contenedor--input">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-                <div class="soporte--contenedor--input">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
-                </div>
-                <div class="soporte--contenedor--input">
-                    <label for="correo">Correo electronico:</label>
-                    <input type="email" id="correo" name="correo">
-                </div>
-                <div class="soporte--contenedor--input">
-                    <label for="asunto">Asunto</label>
-                    <select name="asunto" id="asunto">
-                        <option value="1">Seleccione una opcion</option>
-                        <option value="2">Informacion erronea</option>
-                        <option value="3">Informacion erronea</option>
-                        <option value="1">Otros</option>
-                    </select>
-                </div>
-                <div class="soporte--contenedor--mensaje">
-                    <label for="mensaje">Deje su mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <div class="soporte--contenedor--botones">
-                    <input type="submit" value="enviar">
-                    <input type="reset" value="cancelar">
-                </div>
-            </form>
+        </div>
         </section>
     </main>
     <footer>
@@ -135,9 +149,9 @@
                                 </svg></a></h4>
                     </div>
                 </div>
-                    <div class="col-12 text-white text-center border-top border-white pe-0">
-                        <p class="m-0">Copyright 2022©</p>
-                    </div>
+                <div class="col-12 text-white text-center border-top border-white pe-0">
+                    <p class="m-0">Copyright 2022©</p>
+                </div>
             </div>
         </div>
     </footer>
