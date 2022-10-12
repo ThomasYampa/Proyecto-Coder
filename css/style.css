@@ -1,283 +1,320 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* barra de navegacion  inicio*/
-.icon-size{
-    width: 55px;
+
+ul, li {
+  list-style: none;
 }
-.bg-color {
-    background-color: rgb( 0, 1, 23);
+
+a {
+  text-decoration: none;
 }
+
+.icon-size {
+  width: 55px;
+}
+
 .icon-giro {
-    transition-duration: 3s;   
+  transition-duration: 3s;
 }
 .icon-giro:hover {
-    transform:rotatey(360deg);
+  transform: rotatey(360deg);
 }
-/* barra de navegacion  fin*/
 
-/* index inicio*/
-.new {
-    overflow: hidden;
-    position: relative;
+.bg-color {
+  background-color: rgb(0, 1, 23);
+}
 
+.bg-black {
+  background-color: black;
 }
-.new img {
-    height: 100%;
-    width: 100%;
-    transition: 0.5s all ease-in-out;
+
+@media (max-width: 400px) {
+  .font-size {
+    font-size: 0.8em;
+  }
 }
-.new:hover img {
-    transform: scale(1.5);
-}
-.new h3{
-    color: white;
-    position: absolute;
-    bottom:0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .5);
-}
-.new-font {
-    font-size:large;
+.input-style {
+  width: 100%;
 }
 
 .img-carousel {
-    display: inline-block;
-    width: 100%;
-    height: 70vh;
+  display: inline-block;
+  width: 100%;
+  height: 70vh;
 }
 @media (max-width: 400px) {
-    .img-carousel {
-        height: 40vh;
-    }
+  .img-carousel {
+    height: 40vh;
+  }
 }
 @media (max-width: 820px) {
-    .img-carousel {
-        height: 60vh;
-    }
+  .img-carousel {
+    height: 60vh;
+  }
 }
-/* main-index fin*/
 
-/* footer inicio*/
-.bg-black {
-    background-color: black;
+.new {
+  overflow: hidden;
+  position: relative;
 }
-@media (max-width:400px){
-    .font-size{
-        font-size: .8em;
-    }
+.new-font {
+  font-size: large;
 }
-    
+.new-img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.new-img:hover {
+  transform: scale(1.5);
+}
+.new h3 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-/* footer fin*/
-
-/* main-equipos inicio*/
 .hov :hover {
-    background-color: #FF4D55;
+  background-color: #FF4D55;
 }
+
 .team-size {
-    width: 34px;
+  width: 34px;
 }
 .team-size2 {
-    width: 28px;
+  width: 28px;
 }
+
 .bg-red {
-    background-color: #FF7D80;
+  background-color: #FF7D80;
 }
-.ranking-team{
-    display: flex;
-    
+
+.ranking-team {
+  display: flex;
 }
-.ranking-team--num{
-    width: 5%;
+.ranking-team--num {
+  width: 5%;
 }
-.ranking-team--name{
-    width: 20%;
+.ranking-team--name {
+  width: 20%;
 }
+
+.ranking-img {
+  background-image: url(../imagenes/equipos/ranking.png);
+  background-position: 50%;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  height: 60px;
+}
+
+.animation-teams:hover {
+  transform: scale(1.03);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 5px 5px 5px;
+}
+
 .promo {
-    background-image: url(../imagenes/aside.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+  background-image: url(../imagenes/aside.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
-.promo a{
-    font-family: 'Righteous', cursive;
-    font-size: x-large;
-    color: white;
+.promo a {
+  font-family: "Righteous", cursive;
+  font-size: x-large;
+  color: white;
 }
 .promo a:hover {
-    color: rgb(224, 156, 242);
+  color: rgb(224, 156, 242);
 }
-.ranking-img {
-    background-image: url(../imagenes/equipos/ranking.png);
-    background-position: 50%;
-    background-size: 200px;
-    background-repeat: no-repeat;
-    height: 60px;
-}
-.animation-teams:hover {
-    transform: scale(1.03);
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    box-shadow: 5px 5px 5px;
-}
-.bg-color-cont{
-    background: #C04848;
-    background: -webkit-linear-gradient(to right, #480048, #C04848);
-    background: linear-gradient(to right, #480048, #C04848);
-}
-/* main-equipos fin*/
 
-/* main-torneos inicio*/
-.principal {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-    height: 50vh;
-    margin: 0.5em auto 0.5em auto;
-    border: solid 1px black ;
+.bg-color-cont {
+  background: #C04848;
+  background: -webkit-linear-gradient(to right, #480048, #C04848);
+  background: linear-gradient(to right, #480048, #C04848);
 }
-.pricipal--nombre {
-    display: flex;
+
+.linea {
+  border-bottom: medium solid #6E12CB;
+}
+
+.tournament--principal {
+  box-shadow: -1px 2px 21px -3px rgb(0, 0, 0);
+  -webkit-box-shadow: -1px 2px 21px -3px rgb(0, 0, 0);
+  -moz-box-shadow: -1px 2px 21px -3px rgb(0, 0, 0);
+  background-color: #dbdbdb;
+  color: #5D5E61;
+  transition: 0.5s all ease-in-out;
+}
+.tournament--principal--top {
+  height: 40vh;
+  position: relative;
+}
+.tournament--principal--top span {
+  position: absolute;
+  background-color: #ED2939;
+  color: white;
+  border-radius: 5px;
+  right: 1%;
+  top: 2%;
+}
+.tournament--principal--top h2 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(179, 4, 4, 0) 100%);
+}
+.tournament--principal--top img {
+  width: 100%;
+  height: 100%;
+}
+.tournament--principal--bot--data {
+  text-align: center;
+  font-family: "Signika", sans-serif;
+}
+.tournament--principal:hover {
+  transform: scale(1.02);
+}
+.tournament--secondary {
+  box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #dbdbdb;
+  color: #5D5E61;
+  transition: 0.5s all ease-in-out;
+}
+.tournament--secondary--top {
+  height: 25vh;
+  position: relative;
+}
+.tournament--secondary--top span {
+  position: absolute;
+  background-color: #5D5E61;
+  color: white;
+  border-radius: 5px;
+  right: 1%;
+  top: 4%;
+}
+.tournament--secondary--top h3 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(179, 4, 4, 0) 100%);
+}
+.tournament--secondary--top img {
+  width: 100%;
+  height: 100%;
+}
+.tournament--secondary--bot--data {
+  text-align: center;
+  font-family: "Signika", sans-serif;
+}
+.tournament--secondary:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  #disabled {
+    display: none;
+  }
+  .tournament--principal--top {
     background-image: url(../imagenes/torneos/esl.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    height: 90%;
-    width: 100%;
+  }
+  .tournament--principal--top img {
+    display: none;
+  }
+  .tournament--secondary--top {
+    background-image: url(../imagenes/torneos/rio.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .tournament--secondary--top img {
+    display: none;
+  }
+  #torn-2 {
+    background-image: url(../imagenes/torneos/eslchall.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  #torn-2 img {
+    display: none;
+  }
+  #torn-3 {
+    background-image: url(../imagenes/torneos/blpremier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  #torn-3 img {
+    display: none;
+  }
+  #torn-4 {
+    background-image: url(../imagenes/torneos/premier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  #torn-4 img {
+    display: none;
+  }
+  #torn-5 {
+    background-image: url(../imagenes/torneos/cct.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  #torn-5 img {
+    display: none;
+  }
+  #torn-6 {
+    background-image: url(../imagenes/torneos/swiss.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  #torn-6 img {
+    display: none;
+  }
+}
+.h2-fix--responsive {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .h2-fix {
+    display: none;
+  }
+  .h2-fix--responsive {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .tournament--secondary--bot .fix-data {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    color: white;
-}
-.principal--informacion {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.principal--informacion p{
-    display: inline-block;
-}
-.torneo {
-    display: block;
-    width: 98%;
-    height: 15vh;
-    margin: 0.5em auto 0.5em auto;
-    border: solid 1px black ;
-}
-.torneo--nombre {
-    background-color: rgb(217, 217, 217);
-    height: 80%;
-}
-.torneo--informacion {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.torneo--informacion p {
-    display: inline-block;
+  }
+  .tournament--secondary--bot--disabled {
+    display: none;
+  }
 }
 
-/* main-torneos fin*/
-
-/* main-galeria inicio*/
-.galeria--eventos {
-    margin-bottom: 5vh;
-}
-.galeria--eventos h1{
-    height: 10vh;
-    background-color: rgb(120, 51, 225);
-}
-.galeria--contenedor--eventos {
-    display: block;
-}
-.galeria--contenedor--eventos h3 {
-    width: 20vw;
-    margin: auto;
-}
-.galeria--contenedor--eventos--img {
-    display: flex;
-    flex-wrap: wrap;
-}
-.galeria--contenedor--eventos--img img{
-    display: inline-block;
-    width: 50%;
-    height: 33,3%;
-}
-.galeria--contenedor--equipos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-.galeria--contenedor--equipos img {
-    width: 25%;
-    height: 16,65%;
-}
-.galeria--contenedor--jugadores {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-.galeria--contenedor--jugadores img {
-    width: 25%;
-    height: 16,65%;
-}
-/* main-galeria fin*/
-
-/* main-noticia inicio */
-.noticias--popular h1 {
-    height: 12vh;
-    background-color: rgb(120, 51, 225);
-}
-.noticias--popular--principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.noticias--popular--principal img {
-    height: 80%;
-    width: 70vw;
-    border: solid 1px black;
-}
-.noticias--popular--principal--texto {
-    height: 20%;
-    width: 70vw;
-    border: solid 1px black;
-}
-.noticias--csgo {
-    margin-top: 5vh;
-    margin-bottom:5vh ;
-}
-.noticias--contenedor {
-    display: flex;
-    flex-direction: row;
-    height: 20vh;
-    width: 100%;
-    justify-content: space-around;
-}
-.noticias--csgo--nota {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 25%;
-    border: solid 1px black;
-}
-.noticias--csgo--nota img {
-    height: 80%;
-}
-
-/* main-noticia fin */
-
-/* main-soporte inicio */
-.input-style {
-    width: 100%;
-}
-/* main-soporte fin */
-
+/*# sourceMappingURL=style.css.map */

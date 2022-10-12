@@ -1,0 +1,12 @@
+.icon-size {
+    width: 55px;
+}
+.icon-giro {
+    transition-duration: 3s;
+    &:hover {
+        transform:rotatey(360deg);
+    }
+}
+.bg-color {
+    background-color: rgb( 0, 1, 23);
+}

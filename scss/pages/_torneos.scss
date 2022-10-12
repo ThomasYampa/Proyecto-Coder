@@ -1,0 +1,209 @@
+.linea {
+    border-bottom: medium solid $linea-color;
+}
+.tournament {
+    &--principal {
+        box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        background-color: #dbdbdb;
+        color: #5D5E61;
+        transition: 0.5s all ease-in-out;
+
+        &--top {
+            height: 40vh;
+            position: relative;
+
+            span {
+                position: absolute;
+                background-color: #ED2939;
+                color: white;
+                border-radius: 5px;
+                right: 1%;
+                top: 2%;
+            }
+
+            h2 {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(179, 4, 4, 0) 100%);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &--bot {
+            &--data {
+                text-align: center;
+                font-family: $tournament-font;
+            }
+        }
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &--secondary {
+        box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        background-color: #dbdbdb;
+        color: #5D5E61;
+        transition: 0.5s all ease-in-out;
+        &--top {
+            height: 25vh;
+            position: relative;
+
+            span {
+                position: absolute;
+                background-color: #5D5E61;
+                color: white;
+                border-radius: 5px;
+                right: 1%;
+                top: 4%;
+            }
+
+            h3 {
+                color: white;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(179, 4, 4, 0) 100%);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &--bot {
+            &--data {
+                text-align: center;
+                font-family: $tournament-font;
+            }
+        }
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #disabled {
+        display: none;
+    }
+
+    .tournament--principal--top {
+        background-image: url(../imagenes/torneos/esl.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    .tournament--secondary--top {
+        background-image: url(../imagenes/torneos/rio.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    #torn-2 {
+        background-image: url(../imagenes/torneos/eslchall.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    #torn-3 {
+        background-image: url(../imagenes/torneos/blpremier.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    #torn-4 {
+        background-image: url(../imagenes/torneos/premier.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    #torn-5 {
+        background-image: url(../imagenes/torneos/cct.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+
+    #torn-6 {
+        background-image: url(../imagenes/torneos/swiss.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        img {
+            display: none;
+        }
+    }
+}
+
+.h2-fix--responsive {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .h2-fix {
+        display: none;
+
+        &--responsive {
+            display: block;
+        }
+    }
+
+}
+@media (max-width:500px) {
+    .tournament--secondary--bot {
+        & .fix-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    .tournament--secondary--bot--disabled {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.new {
+    overflow: hidden;
+    position: relative;
+    &-font{
+        font-size:large;
+    }
+    &-img {
+        height: 100%;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    &-img:hover{
+        transform: scale(1.5);
+    }
+    h3 {
+    color: white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    }
+}

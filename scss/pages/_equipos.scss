@@ -1,0 +1,53 @@
+.hov :hover {
+    background-color: #FF4D55;
+}
+.team-size {
+    width: 34px;
+    &2 {
+        width: 28px;
+    }
+}
+.bg-red {
+    background-color: #FF7D80;
+}
+.ranking-team{
+    display: flex;   
+    &--num{
+        width: 5%;
+    }
+    &--name{
+        width: 20%;
+    }
+}
+.ranking-img {
+    background-image: url(../imagenes/equipos/ranking.png);
+    background-position: 50%;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    height: 60px;
+}
+.animation-teams:hover {
+    transform: scale(1.03);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 5px 5px 5px;
+}
+.promo {
+    background-image: url(../imagenes/aside.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    a {
+        font-family: 'Righteous', cursive;
+        font-size: x-large;
+        color: white;
+    }
+    & a:hover {
+        color: rgb(224, 156, 242);
+    }
+}
+.bg-color-cont{
+    background: #C04848;
+    background: -webkit-linear-gradient(to right, #480048, #C04848);
+    background: linear-gradient(to right, #480048, #C04848);
+}
