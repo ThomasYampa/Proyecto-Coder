@@ -1,0 +1,104 @@
+.background-wave {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.grilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.not--csgo {
+    position: relative;
+    border-radius: 10px;
+    &--principal {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.02);
+            transition-duration: 1s;
+            box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        }
+
+        &--txt {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            margin-bottom: 0;
+            color: white;
+            background-color: rgba(0, 0, 0, .7);
+            overflow: hidden;
+
+        }
+    }
+
+    &--img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &--txt {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+
+        p {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        transition-duration: 1s;
+        box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -1px 2px 21px -3px rgba(0, 0, 0, 1);
+
+        .not--csgo--txt {
+            height: 82px;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+            p {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.cont-flex {
+    flex-wrap: wrap;
+}
+
+@media (max-width:800px) {
+    .not--csgo--principal--txt {
+        p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    #not-fix-txt {
+        p {
+            display: none;
+        }
+    }
+}
