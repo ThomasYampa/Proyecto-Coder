@@ -406,5 +406,33 @@ a {
     display: none;
   }
 }
+@media (max-width: 370px) {
+  .not--csgo:hover .not--csgo--txt {
+    height: 100px;
+  }
+}
+.galery-titulo {
+  background-color: rgb(88, 7, 220);
+  color: white;
+}
+
+.galery--cont {
+  overflow: hidden;
+}
+
+.galery--img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.galery--img:hover {
+  filter: saturate(180%);
+  transform: scale(1.02);
+}
+
+.svg-color {
+  color: rgb(88, 7, 220);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.galery-titulo {
+    background-color: $svg-color;
+    color: white;
+}
+.galery--cont{
+    overflow: hidden;
+}
+.galery--img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    transition:all .5s ease-in-out;
+    &:hover {
+        filter: saturate(180%);
+        transform: scale(1.02);
+    
+    }
+    
+}
+.svg-color {
+    color: $svg-color;
+}

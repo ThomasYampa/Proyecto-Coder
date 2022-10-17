@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -20,79 +20,249 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-color">
             <div class="container-fluid bg-color">
-                    <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon.png" alt="" class="icon-size icon-giro"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon.png" alt=""
+                        class="icon-size icon-giro"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipos.html">Equipos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="torneos.html">Torneos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipos.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg></button>
+                        <button class="btn bg-color text-white" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="galeria--eventos">
-                <h1>Galeria de eventos</h1>
-            <div class="galeria--contenedor--eventos">
-                <h3>PGL Major Antwerp 2022</h3>
-            </div>
-            <div class="galeria--contenedor--eventos--img">
-                <img src="../imagenes/galeria/pgl-1.jpg" alt="">
-                <img src="../imagenes/galeria/pgl-2.jpg" alt="">
-                <img src="../imagenes/galeria/pgl-3.jpg" alt="">
-                <img src="../imagenes/galeria/pgl-4.jpg" alt="">
-            </div>
-            <div class="galeria--contenedor--eventos">
-                <h3>BLAST Premier Fall Gropus 2022</h3>
-            </div>
-                <div class="galeria--contenedor--eventos--img">
-                    <img src="../imagenes/galeria/blast-1.jpg" alt="">
-                    <img src="../imagenes/galeria/blast-2.jpg" alt="">
-                    <img src="../imagenes/galeria/blast-3.jpg" alt="">
-                    <img src="../imagenes/galeria/blast-4.jpg" alt="">
+        <section>
+            <h1 class="text-center galery-titulo">Galeria Eventos</h1>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="conteiner-fluid">
+                            <div class="row d-flex justify-content-center">
+                                <h3 class="col-10 text-center">BLAST Premier Fall Gropus 2022</h3>
+                                <div class="col-5 px-0 my-1 me-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/blast-1.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/blast-2.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 me-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/blast-3.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/blast-4.jpg" alt="" class="galery--img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteiner-fluid">
+                            <div class="row d-flex justify-content-center">
+                                <h3 class="col-10 text-center">PGL Major Antwerp Belgium 2022</h3>
+                                <div class="col-5 px-0 my-1 me-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/pgl-1.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/pgl-2.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 me-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/pgl-3.jpg" alt="" class="galery--img">
+                                </div>
+                                <div class="col-5 px-0 my-1 mx-sm-2">
+                                    <img src="../imagenes/galeria/pgl-4.jpg" alt="" class="galery--img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </section>
-        <section class="galeria--equipos">
-                <h2>Galeria de equipos</h2>
-            <div class="galeria--contenedor--equipos">
-                <img src="../imagenes/galeria/team-vitality.jpg" alt="">
-                <img src="../imagenes/galeria/team-liquid.jpg" alt="">
-                <img src="../imagenes/galeria/team-nip.jpg" alt="">
-                <img src="../imagenes/galeria/team-g2.jpg" alt="">
             </div>
         </section>
-        <section class="galeria--jugadores">
-            <h2>Galeria de jugadores</h2>
-            <div class="galeria--contenedor--jugadores">
-                <img src="../imagenes/galeria/jugador-try.jpg" alt="">
-                <img src="../imagenes/galeria/jugador-device.jpg" alt="">
-                <img src="../imagenes/galeria/jugador-luken.jpg" alt="">
-                <img src="../imagenes/galeria/jugador-fallen.jpg" alt="">
+        <section>
+            <h2 class="text-center linea mx-5">Galeria de Equipos</h2>
+            <div id="equipos-carousel" class="carousel slide mb-5" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Vitality <img src="../imagenes/equipos/vitality.webp" alt="" class="team-size">
+                                    </h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-vitality-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-vitality.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-vitality-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Faze Clan <img src="../imagenes/equipos/faze.svg" alt="" class="team-size"></h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-faze-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-faze-1.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-faze-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Liquid <img src="../imagenes/equipos/liquid.svg" alt="" class="team-size"></h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-liquid-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-liquid-1.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/team-liquid-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#equipos-carousel"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-arrow-left-circle-fill svg-color" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#equipos-carousel"
+                    data-bs-slide="next">
+                    <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-arrow-right-circle-fill svg-color" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center linea mx-5">Galeria de Jugadores</h2>
+            <div id="jugadores-carousel" class="carousel slide mb-5" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Try <img src="../imagenes/galeria/AR.webp" alt="" class="team-size"></h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-try.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-try-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-try-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Fallen <img src="../imagenes/galeria/BR.webp" alt="" class="team-size"></h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-fallen.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-fallen-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-fallen-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteiner-fluid">
+                            <div class="row mx-0 d-flex justify-content-center">
+                                <div class="col-12 text-center">
+                                    <h3>Luken <img src="../imagenes/galeria/AR.webp" alt="" class="team-size"></h3>
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-luken-2.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-luken.jpg" class="galery--img" alt="...">
+                                </div>
+                                <div class="col-9 col-sm-3 my-1 my-sm-0">
+                                    <img src="../imagenes/galeria/jugador-luken-3.jpg" class="galery--img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#jugadores-carousel"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-arrow-left-circle-fill svg-color" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#jugadores-carousel"
+                    data-bs-slide="next">
+                    <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-arrow-right-circle-fill svg-color" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
     </main>
@@ -105,9 +275,9 @@
                         elit. Doloremque ipsum temporibus numquam dicta saepe suscipit, magnam facilis unde cupiditate
                         recusandae, reprehenderit, velit vel mollitia! Perspiciatis facilis modi et placeat magnam.</p>
                 </div>
-                <div class="col-sm-12 col-md-6 text-white pe-0 py-md-5 py-3">
-                    <h4 class="ps-md-0 m-0 text-md-center"><a name="contacto">Contacto</a></h4>
-                    <div class="ps-2 ps-md-0 text-md-center">
+                <div class="col-sm-12 col-md-6 text-white py-0 py-md-5 py-3">
+                    <h4 class="ps-md-0 m-0 text-center"><a name="contacto">Contacto</a></h4>
+                    <div class="ps-0 text-center">
                         <a href="https://web.whatsapp.com/" target="_blank" class="text-white text-md-center"> <svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-whatsapp contact-icon" viewBox="0 0 16 16">
@@ -128,7 +298,7 @@
                             </svg></a>
                     </div>
                     <div>
-                        <h4 class="text-md-center m-0 "><a href="soporte.html"
+                        <h4 class="text-center m-0 "><a href="soporte.html"
                                 class="ps-0 ps-md-0 text-decoration-none text-white">Soporte <svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-headset " viewBox="0 0 16 16">
