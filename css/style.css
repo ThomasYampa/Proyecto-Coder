@@ -141,6 +141,10 @@ a {
   background: linear-gradient(to right, #480048, #C04848);
 }
 
+.prox-conteiner {
+  position: relative;
+}
+
 .linea {
   border-bottom: medium solid #6E12CB;
 }
@@ -240,7 +244,7 @@ a {
     display: none;
   }
   .tournament--secondary--top {
-    background-image: url(../imagenes/torneos/rio.webp);
+    background-image: url(../imagenes/torneos/rio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -276,7 +280,7 @@ a {
     display: none;
   }
   #torn-5 {
-    background-image: url(../imagenes/torneos/cct.webp);
+    background-image: url(../imagenes/torneos/cct.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -285,7 +289,7 @@ a {
     display: none;
   }
   #torn-6 {
-    background-image: url(../imagenes/torneos/swiss.webp);
+    background-image: url(../imagenes/torneos/swiss.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -411,6 +415,17 @@ a {
     height: 100px;
   }
 }
+.players-conteiner {
+  position: relative;
+}
+
+.galery-wave {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
 .galery-titulo {
   background-color: rgb(88, 7, 220);
   color: white;

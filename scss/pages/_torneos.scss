@@ -1,3 +1,7 @@
+.prox-conteiner {
+    position: relative;
+}
+
 .linea {
     border-bottom: medium solid $linea-color;
 }
@@ -115,7 +119,7 @@
     }
 
     .tournament--secondary--top {
-        background-image: url(../imagenes/torneos/rio.webp);
+        background-image: url(../imagenes/torneos/rio.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -159,7 +163,7 @@
     }
 
     #torn-5 {
-        background-image: url(../imagenes/torneos/cct.webp);
+        background-image: url(../imagenes/torneos/cct.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -170,7 +174,7 @@
     }
 
     #torn-6 {
-        background-image: url(../imagenes/torneos/swiss.webp);
+        background-image: url(../imagenes/torneos/swiss.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
