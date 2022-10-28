@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="../imagenes/ico.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="description"
         content="Mantenete informado sobre el mundo de los e-sports, las noticias mas populares y recientes">
     <title>Info Esports | Noticias</title>
@@ -75,7 +76,7 @@
                     <div class="col-11">
                         <h1 class="my-4 fw-bold text-center">LO MAS POPULAR</h1>
                     </div>
-                    <div class="col-10 col-sm-7 not--csgo--principal px-0">
+                    <div class="col-10 col-sm-7 not--csgo--principal px-0" data-aos="fade-right">
                         <img src="../imagenes/noticias/9z.jpg" alt="" class="not--csgo--img">
                         <div class="not--csgo--principal--txt">
                             <h3>9z clasifico al major en Rio</h3>
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-10 col-sm-3 grilla">
-                        <div class="not--csgo--principal my-3 my-sm-0">
+                        <div class="not--csgo--principal my-3 my-sm-0" data-aos="fade-down">
                             <img src="../imagenes/noticias/try.jpg" alt="" class="not--csgo--img">
                             <div class="not--csgo--principal--txt" id="not-fix-txt">
                                 <h3 class="mb-0">Try al major</h3>
@@ -93,7 +94,7 @@
                                     primer major</p>
                             </div>
                         </div>
-                        <div class="not--csgo--principal my-3 my-sm-0" id="not-fix-txt">
+                        <div class="not--csgo--principal my-3 my-sm-0" id="not-fix-txt" data-aos="fade-up">
                             <img src="../imagenes/noticias/device.jpg" alt="" class="not--csgo--img">
                             <div class="not--csgo--principal--txt">
                                 <h3 class="mb-0">Vuelve Device</h3>
@@ -110,7 +111,7 @@
                     <div class="col-11 my-4">
                         <h2 class="linea">Counter-Strike Global Offensive</h2>
                     </div>
-                    <div class="col-11 d-flex justify-content-md-around justify-content-center cont-flex">
+                    <div class="col-11 d-flex justify-content-md-around justify-content-center cont-flex" data-aos="flip-up">
                         <div class="col-10 col-md-3 not--csgo my-3">
                             <img src="../imagenes/noticias/isg.jpg" alt="" class="not--csgo--img">
                             <div class="not--csgo--txt">
@@ -145,7 +146,7 @@
                     <div class="col-11">
                         <h2 class="linea">Otros juegos</h2>
                     </div>
-                    <div class="col-11 d-flex justify-content-md-around justify-content-center cont-flex mb-5">
+                    <div class="col-11 d-flex justify-content-md-around justify-content-center cont-flex mb-5"  data-aos="flip-up">
                         <div class="col-10 col-md-3 not--csgo my-3">
                             <img src="../imagenes/noticias/overwatch.jpg" alt="" class="not--csgo--img">
                             <div class="not--csgo--txt">
@@ -221,6 +222,10 @@
         </div>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
