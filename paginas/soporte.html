@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
         </nav>
     </header>
     <main>
-        <div class="conteiner-flud">
+        <!-- <div class="conteiner-flud soporte-box">
             <div class="row mx-0">
                 <div class="col-12 text-center my-lg-4">
                     <h1 class="mb-0">Soporte</h1>
@@ -73,21 +73,21 @@
                     <div class="row d-flex justify-content-center mx-0 my-lg-4">
                         <div class="col-lg-5 col-10">
                             <label for="nombre">Nombre:</label>
-                            <input for="nombre" class="input-style "></input>
+                            <input for="nombre" class="input-style form-style"></input>
                         </div>
                         <div class="col-lg-5 col-10">
                             <label for="apellido">Apellido:</label>
-                            <input for="apellido" class="input-style"></input>
+                            <input for="apellido" class="input-style form-style"></input>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center mx-0 my-lg-4">
                         <div class="col-lg-5 col-10">
                             <label for="correo" class="w-100">Correo electronico:</label>
-                            <input type="email" id="correo" name="correo" class="w-100">
+                            <input type="email" id="correo" name="correo" class="w-100 form-style">
                         </div>
                         <div class="col-lg-5 col-10 ">
                             <label for="asunto" class="w-100">Asunto</label>
-                            <select name="asunto" id="asunto" class="w-100 ">
+                            <select name="asunto" id="asunto" class="w-100 form-style">
                                 <option value="1">Seleccione una opcion</option>
                                 <option value="2">Informacion erronea</option>
                                 <option value="3">Donacion</option>
@@ -97,8 +97,9 @@
                     </div>
                     <div class="row d-flex justify-content-center mx-0 p-0 my-lg-4">
                         <div class="col-10 col-10">
-                            <label for="mensaje" class="w-100 ">Deje su mensaje:</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="w-100"></textarea>
+                            <label for="mensaje" class="w-100">Deje su mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                class="w-100 form-style"></textarea>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center mx-0 p-0 my-4">
@@ -109,7 +110,49 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> -->
+        <section>
+            <div class="conteiner-fluid soporte-box">
+                    <form class="row d-flex justify-content-center mx-0">
+                    <div class="col-10 text-center fondo-opaco text-light mt-4 py-2">
+                        <h1>Soporte <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                class="bi bi-headset " viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+                            </svg></h1>
+                    </div>
+                        <div class="col-10 fondo-opaco text-light d-flex justify-content-center flex-wrap py-0 py-sm-4">
+                            <div class="col-10 col-sm-5 py-2 me-sm-4">
+                                <input type="text" class="form-control form-style" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-10 col-sm-5 py-2 ms-sm-4">
+                                <input type="text" class="form-control form-style" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="col-10 fondo-opaco text-light d-flex justify-content-center flex-wrap py-0 py-sm-4">
+                            <div class="col-10 col-sm-5 py-2 me-sm-4">
+                                <input type="email" class="form-control form-style" id="email"
+                                    placeholder="Correo electronico">
+                            </div>
+                            <div class="col-10 col-sm-5 py-2 ms-sm-4">
+                                <select class="form-select form-style bg-dark" aria-label="Default select example">
+                                    <option selected>Seleccione una opcion</option>
+                                    <option value="1">Informacion erronea</option>
+                                    <option value="2">Donacion</option>
+                                    <option value="3">Otros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-10 fondo-opaco text-light d-flex py-2 mx">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="w-100 form-style"
+                                placeholder="  Deje su Mensaje..."></textarea>
+                        </div>
+                        <div class="col-10 fondo-opaco text-light d-flex justify-content-center mb-4 pb-4">
+                            <input class="btn border-light text-light mx-2 form-style" type="submit" value="Enviar">
+                            <input class="btn border-light text-light mx-2 form-style" type="reset" value="Cancelar">
+                        </div>
+                    </form>
+            </div>
         </section>
     </main>
     <footer>
